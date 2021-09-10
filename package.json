@@ -24,6 +24,7 @@
     "access": "public"
   },
   "np": {
+    "tests": false,
     "yarn": false
   },
   "dependencies": {
