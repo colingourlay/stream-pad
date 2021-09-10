@@ -2,7 +2,7 @@
 
 Use a Novation Launchpad[<sup>1</sup>](#fnd1) as an OBS Studio controller
 
-![Running on a device](demo.jpg)
+![Running on a device](https://github.com/colingourlay/stream-pad/blob/main/demo.jpg?raw=true)
 
 ### Supported features
 
