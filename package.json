@@ -1,0 +1,37 @@
+{
+  "name": "stream-pad",
+  "version": "0.0.0",
+  "description": "Use a Novation Launchpad as an OBS Studio controller",
+  "bin": {
+    "stream-pad": "bin/stream-pad.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "release": "np"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "author": "Colin Gourlay",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colingourlay/stream-pad.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "np": {
+    "yarn": false
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "launchpad-mini": "^2.3.3",
+    "obs-websocket-js": "^4.0.3",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "np": "^7.5.0"
+  }
+}
