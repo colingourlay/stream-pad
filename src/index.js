@@ -32,7 +32,10 @@ const run = async (obsWebsocketHostname, obsWebsocketPort, obsWebsocketPassword)
 
   let lastKnownActiveScene;
 
-  const sceneNames = (await obs.send('GetSceneList')).scenes.slice(0, 8).map((scene) => scene.name);
+  const sceneNames = (await obs.send('GetSceneList')).scenes
+    .slice(0, 8)
+    .map((scene) => scene.name)
+    .filter((name) => name.indexOf('group:') !== 0 && name.indexOf('---') !== 0);
 
   const updateActveScene = (activeSceneName) => {
     lastKnownActiveScene = activeSceneName;
