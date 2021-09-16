@@ -1,6 +1,6 @@
 {
   "name": "stream-pad",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Use a Novation Launchpad as an OBS Studio controller",
   "bin": {
     "stream-pad": "bin/stream-pad.js"
